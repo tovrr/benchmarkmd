@@ -1,0 +1,2 @@
+// Service Worker placeholder
+export {};
