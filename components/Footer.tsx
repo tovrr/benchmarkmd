@@ -1,21 +1,5 @@
 import Link from 'next/link'
 
-const footerLinks = {
-  product: [
-    { href: '/tool', label: 'Benchmark Tool' },
-    { href: '/reports', label: 'Reports' },
-    { href: '/docs', label: 'Documentation' },
-  ],
-  company: [
-    { href: '/about', label: 'About' },
-    { href: '/contact', label: 'Contact' },
-  ],
-  legal: [
-    { href: '/privacy', label: 'Privacy Policy' },
-    { href: '/terms', label: 'Terms of Service' },
-  ],
-}
-
 const socialLinks = [
   { 
     href: 'https://github.com/tovrr/benchmarkmd', 
@@ -27,8 +11,8 @@ const socialLinks = [
     )
   },
   { 
-    href: 'https://twitter.com', 
-    label: 'Twitter',
+    href: 'https://x.com/Benchmark_MD', 
+    label: 'X (Twitter)',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -42,106 +26,50 @@ export default function Footer() {
 
   return (
     <footer 
-      className="border-t border-gray-800 py-12 px-6 mt-20 bg-black"
+      className="border-t border-gray-800 py-8 px-6 mt-20 bg-black"
       role="contentinfo"
     >
       <div className="max-w-6xl mx-auto">
-        {/* Desktop: Multi-column, Mobile: Stacked */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-          
-          {/* Brand */}
-          <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-1 font-bold text-lg mb-4">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          {/* Brand & Copyright */}
+          <div className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-1 font-bold text-lg">
               <span className="text-white">BENCHMARK</span>
               <span className="text-red-500">MD</span>
             </Link>
-            <p className="text-gray-500 text-sm">
-              Zero Hype. Maximum Reality.
-            </p>
-            <p className="text-gray-600 text-xs mt-4">
-              © {currentYear} BenchmarkMD
-            </p>
+            <span className="text-gray-600 text-sm">© {currentYear}</span>
           </div>
-
-          {/* Product Links */}
-          <div>
-            <h2 className="text-sm font-semibold text-white mb-4 uppercase tracking-wider">
-              Product
-            </h2>
-            <ul className="space-y-3">
-              {footerLinks.product.map((link) => (
-                <li key={link.href}>
-                  <Link 
-                    href={link.href}
-                    className="text-gray-400 hover:text-white text-sm transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company Links */}
-          <div>
-            <h2 className="text-sm font-semibold text-white mb-4 uppercase tracking-wider">
-              Company
-            </h2>
-            <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
-                <li key={link.href}>
-                  <Link 
-                    href={link.href}
-                    className="text-gray-400 hover:text-white text-sm transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
+          
           {/* Legal Links */}
-          <div>
-            <h2 className="text-sm font-semibold text-white mb-4 uppercase tracking-wider">
-              Legal
-            </h2>
-            <ul className="space-y-3">
-              {footerLinks.legal.map((link) => (
-                <li key={link.href}>
-                  <Link 
-                    href={link.href}
-                    className="text-gray-400 hover:text-white text-sm transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* Social Links - Mobile responsive */}
-        <div className="mt-12 pt-8 border-t border-gray-800">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-gray-500 text-sm">
-              © {currentYear} BenchmarkMD — <span className="text-red-500">Zero Hype, Maximum Reality</span>
-            </p>
-            
-            <div className="flex items-center gap-6">
-              {socialLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
-                  aria-label={link.label}
-                >
-                  {link.icon}
-                </a>
-              ))}
-            </div>
+          <nav className="flex items-center gap-6" aria-label="Footer legal links">
+            <Link 
+              href="/terms"
+              className="text-gray-400 hover:text-white text-sm transition-colors"
+            >
+              Terms
+            </Link>
+            <Link 
+              href="/privacy"
+              className="text-gray-400 hover:text-white text-sm transition-colors"
+            >
+              Privacy
+            </Link>
+          </nav>
+          
+          {/* Social Links */}
+          <div className="flex items-center gap-4">
+            {socialLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+                aria-label={link.label}
+              >
+                {link.icon}
+              </a>
+            ))}
           </div>
         </div>
       </div>

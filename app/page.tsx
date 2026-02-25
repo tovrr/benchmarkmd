@@ -41,9 +41,9 @@ export default function Home() {
       <section className="pt-24 md:pt-32 pb-16 px-4 md:px-6" aria-labelledby="hero-heading">
         <div className="max-w-4xl mx-auto text-center">
           {/* Status Badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-sm font-mono mb-6" aria-label="ATLAS ACTIVE">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-sm font-mono mb-6" aria-label="Atlas AI 2.5">
             <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" aria-hidden="true"></span>
-            ATLAS ACTIVE
+            Atlas AI 2.5
           </div>
           
           {/* Headline */}
@@ -136,18 +136,6 @@ export default function Home() {
           >
             Launch Tool (Beta)
           </Link>
-        </div>
-      </section>
-
-      {/* Manifesto */}
-      <section className="py-16 md:py-20 px-4 md:px-6" aria-labelledby="manifesto-heading">
-        <div className="max-w-3xl mx-auto text-center">
-          <blockquote id="manifesto-heading" className="text-xl md:text-3xl font-mono mb-6">
-            &ldquo;We measure. You decide.&rdquo;
-          </blockquote>
-          <p className="text-gray-400">
-            We&apos;re not anti-AI. We&apos;re pro-reality. The data speaks — we just make sure it&apos;s not lying.
-          </p>
         </div>
       </section>
     </div>

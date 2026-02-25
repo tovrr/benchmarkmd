@@ -1,0 +1,57 @@
+# BenchmarkMD - AI Agent Benchmarking Platform
+
+## About
+BenchmarkMD is an independent AI agent benchmarking platform focused on real-world cost analysis and exposing the uncomfortable truths about AI. Our motto: "We measure. You decide."
+
+## What We Do
+- **Benchmark Tool**: Test AI agents on real tasks and get instant results
+- **Cost Analysis**: Expose the hidden costs of AI that nobody talks about
+- **Post-Mortems**: Document why AI projects fail so others can learn
+- **The Hype Filter**: Question "revolutionary" claims and demand data
+
+## Key Information
+
+### Platform Name
+- **Name**: BenchmarkMD
+- **Tagline**: "Zero Hype. Maximum Reality."
+- **Status**: Atlas AI 2.5
+
+### Features
+- AI agent performance benchmarking
+- Real-world cost analysis for LLM usage
+- Independent, unbiased testing methodology
+- Detailed reports on AI agent capabilities
+- Open-source benchmark tools
+
+### Use Cases
+- Compare AI agent performance
+- Calculate true cost of AI implementations
+- Evaluate AI agent reliability
+- Research AI agent capabilities
+
+### Links
+- Website: https://benchmarkmd.ai
+- Tool: https://benchmarkmd.ai/tool
+- Reports: https://benchmarkmd.ai/reports
+- Documentation: https://benchmarkmd.ai/docs
+- GitHub: https://github.com/tovrr/benchmarkmd
+- X (Twitter): https://x.com/Benchmark_MD
+
+## Technical Details
+
+### Technology Stack
+- Next.js 16 (App Router)
+- TypeScript
+- Tailwind CSS
+- Vercel deployment
+
+### Benchmark Methodology
+Our benchmarking approach focuses on:
+1. Real-world task completion
+2. Cost efficiency analysis
+3. Response quality assessment
+4. Reliability metrics
+
+## Contact
+- For inquiries: info@benchmarkmd.ai
+- GitHub issues: https://github.com/tovrr/benchmarkmd/issues
