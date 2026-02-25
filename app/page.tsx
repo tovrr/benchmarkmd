@@ -95,25 +95,49 @@ export default function Home() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             <article className="p-5 md:p-6 rounded-xl bg-gray-900 border border-gray-800 hover:border-red-500/50 transition-colors">
-              <div className="text-3xl mb-4" aria-hidden="true">📊</div>
+              <div className="w-10 h-10 mb-4 text-red-500" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 3v18h18"/>
+                  <path d="M18 17V9"/>
+                  <path d="M13 17V5"/>
+                  <path d="M8 17v-3"/>
+                </svg>
+              </div>
               <h3 className="text-lg font-semibold mb-2">Benchmark Tool</h3>
               <p className="text-gray-400 text-sm">Test AI agents on real tasks. Get instant results.</p>
             </article>
             
             <article className="p-5 md:p-6 rounded-xl bg-gray-900 border border-gray-800 hover:border-red-500/50 transition-colors">
-              <div className="text-3xl mb-4" aria-hidden="true">💰</div>
+              <div className="w-10 h-10 mb-4 text-red-500" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/>
+                  <path d="M12 18V6"/>
+                </svg>
+              </div>
               <h3 className="text-lg font-semibold mb-2">Cost Analysis</h3>
               <p className="text-gray-400 text-sm">The hidden bill nobody talks about. We expose the real cost.</p>
             </article>
             
             <article className="p-5 md:p-6 rounded-xl bg-gray-900 border border-gray-800 hover:border-red-500/50 transition-colors">
-              <div className="text-3xl mb-4" aria-hidden="true">🔍</div>
+              <div className="w-10 h-10 mb-4 text-red-500" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="11" cy="11" r="8"/>
+                  <path d="m21 21-4.3-4.3"/>
+                  <path d="M8 11h6"/>
+                  <path d="M11 8v6"/>
+                </svg>
+              </div>
               <h3 className="text-lg font-semibold mb-2">Post-Mortems</h3>
               <p className="text-gray-400 text-sm">When AI projects fail, we document why. Lessons learned.</p>
             </article>
             
             <article className="p-5 md:p-6 rounded-xl bg-gray-900 border border-gray-800 hover:border-red-500/50 transition-colors">
-              <div className="text-3xl mb-4" aria-hidden="true">⚡</div>
+              <div className="w-10 h-10 mb-4 text-red-500" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+              </div>
               <h3 className="text-lg font-semibold mb-2">The Hype Filter</h3>
               <p className="text-gray-400 text-sm">"Revolutionary" claims? We ask: Where's the data?</p>
             </article>
