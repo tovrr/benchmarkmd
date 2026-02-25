@@ -3,39 +3,59 @@
 ## About
 BenchmarkMD is an independent AI agent benchmarking platform focused on real-world cost analysis and exposing the uncomfortable truths about AI. Our motto: "We measure. You decide."
 
+## Mission
+We're not anti-AI—we're pro-reality. The data speaks; we just make sure it's not lying.
+
 ## What We Do
 - **Benchmark Tool**: Test AI agents on real tasks and get instant results
 - **Cost Analysis**: Expose the hidden costs of AI that nobody talks about
 - **Post-Mortems**: Document why AI projects fail so others can learn
 - **The Hype Filter**: Question "revolutionary" claims and demand data
+- **Independent Reports**: Unbiased analysis without vendor influence
 
-## Key Information
-
-### Platform Name
+## Platform Status
 - **Name**: BenchmarkMD
 - **Tagline**: "Zero Hype. Maximum Reality."
-- **Status**: Atlas AI 2.5
+- **Assistant**: Atlas AI 2.5
 
-### Features
-- AI agent performance benchmarking
-- Real-world cost analysis for LLM usage
-- Independent, unbiased testing methodology
-- Detailed reports on AI agent capabilities
-- Open-source benchmark tools
+## Key Features
 
-### Use Cases
-- Compare AI agent performance
+### Benchmark Tool
+Our interactive tool allows users to:
+- Compare AI coding agents side-by-side
+- Test on real-world coding tasks
+- Measure quality, cost, and execution time
+- Get detailed performance analysis
+
+### Supported Agents
+We benchmark and compare:
+- Claude Code (Anthropic)
+- Cursor (Anysphere)
+- GitHub Copilot (Microsoft)
+- Devin (Cognition)
+- Bolt.new (StackBlitz)
+- And more...
+
+### Cost Analysis
+We track:
+- API costs per 1K tokens
+- Hidden costs in AI-assisted development
+- Cost efficiency across different agents
+- ROI calculations for AI implementation
+
+### Reports
+Our published reports cover:
+- AI Agent Trends 2026
+- Coding Myths Debunked
+- Ghost Task Inflation
+- Swarm Paradox Analysis
+
+## Use Cases
+- Compare AI agent performance for your use case
 - Calculate true cost of AI implementations
 - Evaluate AI agent reliability
 - Research AI agent capabilities
-
-### Links
-- Website: https://benchmarkmd.ai
-- Tool: https://benchmarkmd.ai/tool
-- Reports: https://benchmarkmd.ai/reports
-- Documentation: https://benchmarkmd.ai/docs
-- GitHub: https://github.com/tovrr/benchmarkmd
-- X (Twitter): https://x.com/Benchmark_MD
+- Make informed decisions about AI tools
 
 ## Technical Details
 
@@ -52,6 +72,18 @@ Our benchmarking approach focuses on:
 3. Response quality assessment
 4. Reliability metrics
 
+## Links
+- Website: https://benchmarkmd.ai
+- Tool: https://benchmarkmd.ai/tool
+- Reports: https://benchmarkmd.ai/reports
+- Documentation: https://benchmarkmd.ai/docs
+- GitHub: https://github.com/tovrr/benchmarkmd
+- X (Twitter): https://x.com/Benchmark_MD
+
 ## Contact
-- For inquiries: info@benchmarkmd.ai
+- General inquiries: info@benchmarkmd.ai
 - GitHub issues: https://github.com/tovrr/benchmarkmd/issues
+
+## Legal
+- Privacy Policy: https://benchmarkmd.ai/privacy
+- Terms of Service: https://benchmarkmd.ai/terms
