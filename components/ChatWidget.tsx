@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import ReactMarkdown from 'react-markdown'
 
 interface Message {
   role: 'user' | 'atlas'
@@ -136,7 +137,10 @@ Ready for benchmarking queries. Ask me about agent comparisons, cost analysis, o
                     ? 'bg-red-500 text-black font-medium' 
                     : 'bg-gray-800 text-gray-100'
                 }`}>
-                  {msg.content}
+                  {msg.role === 'user' 
+                    ? msg.content
+                    : <ReactMarkdown>{msg.content}</ReactMarkdown>
+                  }
                 </div>
               </div>
             ))}
