@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 interface Message {
   role: 'user' | 'atlas'
@@ -139,7 +140,7 @@ Ready for benchmarking queries. Ask me about agent comparisons, cost analysis, o
                 }`}>
                   {msg.role === 'user' 
                     ? msg.content
-                    : <ReactMarkdown>{msg.content}</ReactMarkdown>
+                    : <ReactMarkdown remarkPlugins={[remarkGfm]}>{msg.content}</ReactMarkdown>
                   }
                 </div>
               </div>
